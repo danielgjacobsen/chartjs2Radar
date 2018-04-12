@@ -1,21 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Explore
- @danielgjacobsen
-Sign out
- Watch 1,394
- Star 36,208  Fork 8,631 chartjs/Chart.js
- Code  Issues 441  Pull requests 26  Insights
-Branch: master Find file Copy path Chart.js/samples/utils.js
-543c31d  on Sep 10, 2017
-@simonbrunel simonbrunel Add Google Analytics to samples and update badges (#4734)
-2 contributors @simonbrunel @etimberg
-RawBlameHistory     
-148 lines (125 sloc)  3.24 KB
 'use strict';
 
 window.chartColors = {
