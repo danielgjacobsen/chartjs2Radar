@@ -49,14 +49,6 @@ $(document).ready(function() {
 					line: {
 						tension: 0.000001
 					}
-				},
-				plugins: {
-					filler: {
-						propagate: false
-					},
-					'samples-filler-analyser': {
-						target: 'chart-analyser'
-					}
 				}
 			};
 
