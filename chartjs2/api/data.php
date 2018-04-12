@@ -2,7 +2,7 @@
 //setting header to json
 header('Content-Type: application/json');
 
-$connect = mysqli_connect('db1mysql3p.sicredi.net', 'sonar', 'S0n@r', 'sonar');
+$connect = mysqli_connect('localhost', 'root', '12qwaszx', 'independence');
 if (!$connect) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
     echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
