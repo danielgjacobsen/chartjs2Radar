@@ -4,12 +4,12 @@ $(document).ready(function() {
 	 * call the data.php file to fetch the result from db table.
 	 */
 	$.ajax({
-		url : "http://svn.sicredi.net/sonarEvolution/chartjs2/api/data.php",
+		url : "http://35.224.227.85/chartjs2/api/data.php",
 		type : "GET",
 		success : function(data){
 			console.log(data);
 			
-			var colors = ['purple', 'yellow', 'orange', 'brown', 'black'];
+			var colors = ['green', 'yellow', 'orange', 'blue', 'red'];
 			var len = data.length;
 			
 			var ctx1 = $("#radar-chartcanvas-1");
@@ -20,12 +20,12 @@ $(document).ready(function() {
 				datasetValue[i] = {
 					label : data[i].nome,
 					backgroundColor : colors[i],
-					data : [data[i].agressividade, data[i].extroversao, data[i].dominancia, data[i].exatidao, data[i].empatia, data[i].entusiasmo, data[i].multitarefas],
+					data : [data[i].Agressividade, data[i].Desenv_Relacionamento, data[i].Facilidade_Mudancas, data[i].Extroversao, data[i].Dominancia, data[i].Desenv_Trab, data[i].Formalidade, data[i].Condescendencia, data[i].Concentracao, data[i].Perfil_Tecnico, data[i].Exatidao, data[i].Detalhismo, data[i].Perfil_Artistico, data[i].Paciencia, data[i].Empatia, data[i].Sociabilidade, data[i].Entusiasmo, data[i].Cap_Sonhar, data[i].Automotivacao, data[i].Independencia],
 				}
 			}
 			
 			var data1 = {
-				labels : ["agressividade", "extroversao", "dominancia", "exatidao", "empatia", "entusiasmo", "multitarefas"],
+				labels : ["Agressividade", "Desenv. Relacionamento", "Facilidade Mudancas", "Extroversao", "Dominancia", "Desenv. Trab.", "Formalidade", "Condescendencia", "Concentracao", "Perfil Tecnico", "Exatidao", "Detalhismo", "Perfil Artistico", "Paciencia", "Empatia", "Sociabilidade", "Entusiasmo", "Cap. Sonhar", "Automotivacao", "Independencia"],
 				datasets : datasetValue
 			};
 
