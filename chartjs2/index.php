@@ -10,8 +10,6 @@
             echo "Seja muito bem vindo, usuário!";
         }
     }else{
-        echo"Bem-Vindo, convidado <br>";
-            echo"Essas informações <font color='red'>NÃO PODEM</font> ser acessadas por você";
-            echo"<br><a href='login.html'>Faça Login</a> Para acessar o conteúdo";
+        echo"<script language='javascript' type='text/javascript'>alert('Para acessar o sistema, faça login!');window.location.href=login.html</script>";
     }
 ?>
