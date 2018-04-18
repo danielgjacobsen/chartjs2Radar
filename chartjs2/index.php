@@ -2,13 +2,11 @@
     $login_cookie = $_COOKIE['login'];
     $perfil_cookie = $_COOKIE['perfil'];
     if(isset($login_cookie)){
-        echo"Bem-Vindo, $login_cookie <br>";
-        echo"Essas informações <font color='red'>PODEM</font> ser acessadas por você<br>";
-	    include 'menu.html';
+	    
         if($perfil_cookie == "admin"){
-            echo "Hummmmm, vc é Administrador do sistema.......Parabéns!";
+            include 'menu_admin.html';
         }else{
-            echo "Seja muito bem vindo, usuário!";
+            include 'menu.html';
         }
     }else{
 	
