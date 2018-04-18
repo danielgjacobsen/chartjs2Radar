@@ -1,34 +1,17 @@
-<!DOCTYPE html>
-<html lang="en" >
-	<head>
-		  <meta charset="UTF-8">
-		    <title>Login Selo</title>
-		          <link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		  <div class="wrapper">
-			  	<div class="container">
-							<h1>Bem Vindo</h1>
-									<form class="form" method="POST" action="login.php">
-													<input type="text" placeholder="Username" name="login" id="login">
-																<input type="password" placeholder="Password" name="senha" id="senha">
-																			<button type="submit" value="entrar" id="entrar" name="entrar">Entrar</button>
-																					</form>
-																						</div>
-																							<ul class="bg-bubbles">
-																										<li></li>
-																												<li></li>
-																														<li></li>
-																																<li></li>
-																																		<li></li>
-																																				<li></li>
-																																						<li></li>
-																																								<li></li>
-																																										<li></li>
-																																												<li></li>
-																																													</ul>
-		  </div>
-		    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-		        <script  src="js/index.js"></script>
-	</body>
-</html>
+<?php
+    $login_cookie = $_COOKIE['login'];
+    $perfil_cookie = $_COOKIE['perfil'];
+    if(isset($login_cookie)){
+        echo"Bem-Vindo, $login_cookie <br>";
+        echo"Essas informações <font color='red'>PODEM</font> ser acessadas por você<br>";
+        if($perfil_cookie == "admin"){
+            echo "Hummmmm, vc é Administrador do sistema.......Parabéns!";
+        }else{
+            echo "Seja muito bem vindo, usuário!";
+        }
+    }else{
+	
+        echo"<script language='javascript' type='text/javascript'>alert('Para acessar o sistema, faça login!');</script>";
+        header("Location:login.html");
+    }
+?>
