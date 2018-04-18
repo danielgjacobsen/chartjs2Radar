@@ -4,6 +4,7 @@
     if(isset($login_cookie)){
         echo"Bem-Vindo, $login_cookie <br>";
         echo"Essas informações <font color='red'>PODEM</font> ser acessadas por você<br>";
+	    include 'menu.html';
         if($perfil_cookie == "admin"){
             echo "Hummmmm, vc é Administrador do sistema.......Parabéns!";
         }else{
