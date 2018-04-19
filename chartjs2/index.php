@@ -24,8 +24,8 @@
 					echo"<li><a href='cadastroForm.php'>Usu&aacute;rios</a></li>";
 				}
 				?>		
-			   	<li><a href='radar-db-php.html'>Gráficos</a></li>
-			   	<li><a href='#'>Company</a></li>
+			   	<li><a href='radar-db-php.html'>Gráficosss</a></li>
+			   	<li><a href='logout.php'>Sair</a></li>
 				<li><a href='#'>Contact</a></li>
 			</ul>
 		</div>
