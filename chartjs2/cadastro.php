@@ -9,7 +9,7 @@ $query_select = "SELECT login FROM usuarios WHERE login = '$newlogin'";
 $select = mysqli_query($connect, $query_select);
 $array = mysqli_fetch_array($select);
 $logarray = $array['login']; 
-if(isset($login_cookie)){
+if(isset($login)){
 	if($newlogin == "" || $newlogin == null || $newperfil == "" || $newperfil == null || $newsenha == "" || $newsenha == null){
 		echo"<script language='javascript' type='text/javascript'>alert('Todos os campos devem ser preenchidos');window.location.href='cadastroForm.php';</script>";
 	}else{
@@ -22,7 +22,7 @@ if(isset($login_cookie)){
 			if($insert){
 				echo"<script language='javascript' type='text/javascript'>alert('Usuário cadastrado com sucesso!');window.location.href='login.html'</script>";
 			}else{
-				echo"<script language='javascript' type='text/javascript'>alert('Não foi possível cadastrar esse usuário');window.location.href='cadastroFomr.php'</script>";
+				echo"<script language='javascript' type='text/javascript'>alert('Não foi possível cadastrar esse usuário');window.location.href='cadastroForm.php'</script>";
 			}
 		}
 	}
