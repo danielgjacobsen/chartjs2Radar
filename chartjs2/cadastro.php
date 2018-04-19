@@ -20,7 +20,7 @@ if(isset($login)){
 			$query = "INSERT INTO usuarios (login,senha, perfil) VALUES ('$newlogin','$newsenha', '$newperfil')";
 			$insert = mysqli_query($connect, $query);
 			if($insert){
-				echo"<script language='javascript' type='text/javascript'>alert('Usuário cadastrado com sucesso!');window.location.href='login.html'</script>";
+				echo"<script language='javascript' type='text/javascript'>alert('Usuário cadastrado com sucesso!');window.location.href='index.php'</script>";
 			}else{
 				echo"<script language='javascript' type='text/javascript'>alert('Não foi possível cadastrar esse usuário');window.location.href='cadastroForm.php'</script>";
 			}
