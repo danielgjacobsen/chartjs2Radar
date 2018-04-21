@@ -16,18 +16,8 @@
 	   <title>Selo</title>
 	</head>
 	<body>
-		<div id='cssmenu'>
-			<ul>
-				<li class='active'><a href='index.php'>Home</a></li>
-				<?php
-				if($perfil_cookie == "admin"){
-					echo"<li><a href='cadastroForm.php'>Usu&aacute;rios</a></li>";
-				}
-				?>		
-			   	<li><a href='radar-db-php.html'>Gráficosss</a></li>
-			   	<li><a href='logout.php'>Sair</a></li>
-				<li><a href='#'>Contact</a></li>
-			</ul>
-		</div>
+		<?php 
+			include 'menu.php';
+		?>
 	</body>
 <html>
