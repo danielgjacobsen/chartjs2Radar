@@ -72,9 +72,9 @@ if(isset($login)){
 		$query = "INSERT INTO avaliacoes (time,pessoa,lider,Agressividade,Desenv_Relacionamento,Facilidade_Mudancas,Extroversao,Dominancia,Desenv_Trab,Formalidade,Condescendencia,Perfil_Tecnico,Exatidao,Detalhismo,Perfil_Artistico,Paciencia,Empatia,Sociabilidade,Entusiasmo,Cap_Sonhar,Automotivacao,Independencia) VALUES ('$time','$pessoa','$lider',$Agressividade,$Desenv_Relacionamento,$Facilidade_Mudancas,$Extroversao,$Dominancia,$Desenv_Trab,$Formalidade,$Condescendencia,$Perfil_Tecnico,$Exatidao,$Detalhismo,$Perfil_Artistico,$Paciencia,$Empatia,$Sociabilidade,$Entusiasmo,$Cap_Sonhar,$Automotivacao,$Independencia)";
 		$insert = mysqli_query($connect, $query);
 		if($insert){
-			echo"<script language='javascript' type='text/javascript'>alert('Cadastrado realizado com sucesso!');window.location.href='index.php'</script>";
+			echo"<script language='javascript' type='text/javascript'>alert('Cadastrado realizado com sucesso!');window.location.href='cadastroPessoaForm.php'</script>";
 		}else{
-			echo"<script language='javascript' type='text/javascript'>alert('Não foi possível realizar o cadastro!');window.location.href='cadastroForm.php'</script>";
+			echo"<script language='javascript' type='text/javascript'>alert('Não foi possível realizar o cadastro!');window.location.href='cadastroPessoaForm.php'</script>";
 		}
 	}
 }else{	
