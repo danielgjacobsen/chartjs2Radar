@@ -27,7 +27,9 @@ setcookie("time",$time);
 $connect = mysqli_connect('localhost', 'root', '12qwaszx', 'selo');
 if(isset($login)){
 	if($time == "" || $time == null || $pessoa == "" || $pessoa == null || $Agressividade == "" || $Agressividade == null || $Desenv_Relacionamento == "" || $Desenv_Relacionamento == null || $Facilidade_Mudancas == "" || $Facilidade_Mudancas == null || $Extroversao == "" || $Extroversao == null || $Dominancia == "" || $Dominancia == null || $Desenv_Trab == "" || $Desenv_Trab == null || $Formalidade == "" || $Formalidade == null || $Condescendencia == "" || $Condescendencia == null || $Perfil_Tecnico == "" || $Perfil_Tecnico == null || $Exatidao == "" || $Exatidao == null || $Detalhismo == "" || $Detalhismo == null || $Perfil_Artistico == "" || $Perfil_Artistico == null || $Paciencia == "" || $Paciencia == null || $Empatia == "" || $Empatia == null || $Sociabilidade == "" || $Sociabilidade == null || $Entusiasmo == "" || $Entusiasmo == null || $Cap_Sonhar == "" || $Cap_Sonhar == null || $Automotivacao == "" || $Automotivacao == null || $Independencia == "" || $Independencia == null){
-		echo"<script language='javascript' type='text/javascript'>alert('Todos os campos devem ser preenchidos');window.location.href='cadastroForm.php';</script>";
+		echo"<script language='javascript' type='text/javascript'>alert('Todos os campos devem ser preenchidos');window.location.href='cadastroPessoaForm.php';</script>";
+	}else{
+		echo"<script language='javascript' type='text/javascript'>alert('Ah Velha');window.location.href='cadastroPessoaForm.php';</script>";
 	}
 }else{	
 	echo"<script language='javascript' type='text/javascript'>alert('Para acessar o sistema, faça login!');</script>";
