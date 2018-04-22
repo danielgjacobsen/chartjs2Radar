@@ -12,7 +12,8 @@
 <html>
 <head>
     <title>Radar de Avaliações Selo</title>    
-    <link href="css/default.css" rel="stylesheet">    
+    <link href="css/default.css" rel="stylesheet">   
+    <link rel="stylesheet" href="css/menu_styles.css">
 </head>
 <body>
 	<?php 
