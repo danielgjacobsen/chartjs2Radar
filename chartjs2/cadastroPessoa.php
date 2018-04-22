@@ -26,8 +26,48 @@ setcookie("time",$time);
 
 $connect = mysqli_connect('localhost', 'root', '12qwaszx', 'selo');
 if(isset($login)){
-	if($time == "" || $time == null || $pessoa == "" || $pessoa == null || $Agressividade == "" || $Agressividade == null || $Desenv_Relacionamento == "" || $Desenv_Relacionamento == null || $Facilidade_Mudancas == "" || $Facilidade_Mudancas == null || $Extroversao == "" || $Extroversao == null || $Dominancia == "" || $Dominancia == null || $Desenv_Trab == "" || $Desenv_Trab == null || $Formalidade == "" || $Formalidade == null || $Condescendencia == "" || $Condescendencia == null || $Perfil_Tecnico == "" || $Perfil_Tecnico == null || $Exatidao == "" || $Exatidao == null || $Detalhismo == "" || $Detalhismo == null || $Perfil_Artistico == "" || $Perfil_Artistico == null || $Paciencia == "" || $Paciencia == null || $Empatia == "" || $Empatia == null || $Sociabilidade == "" || $Sociabilidade == null || $Entusiasmo == "" || $Entusiasmo == null || $Cap_Sonhar == "" || $Cap_Sonhar == null || $Automotivacao == "" || $Automotivacao == null || $Independencia == "" || $Independencia == null){
-		echo"<script language='javascript' type='text/javascript'>alert('Todos os campos devem ser preenchidos');window.location.href='cadastroPessoaForm.php';</script>";
+	if($time == "" || $time == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Time precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($pessoa == "" || $pessoa == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Pessoa precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Agressividade == "" || $Agressividade == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Agressividade precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Desenv_Relacionamento == "" || $Desenv_Relacionamento == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Desenv_Relacionamento precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Facilidade_Mudancas == "" || $Facilidade_Mudancas == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Facilidade_Mudancas precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Extroversao == "" || $Extroversao == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Extroversao precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Dominancia == "" || $Dominancia == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Dominancia precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Desenv_Trab == "" || $Desenv_Trab == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Desenv_Trab precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Formalidade == "" || $Formalidade == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Formalidade precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Condescendencia == "" || $Condescendencia == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Condescendencia precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Perfil_Tecnico == "" || $Perfil_Tecnico == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Perfil_Tecnico precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Exatidao == "" || $Exatidao == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Exatidao precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Detalhismo == "" || $Detalhismo == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Detalhismo precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Perfil_Artistico == "" || $Perfil_Artistico == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Perfil_Artistico precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Paciencia == "" || $Paciencia == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Paciencia precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Empatia == "" || $Empatia == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Empatia precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Sociabilidade == "" || $Sociabilidade == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Sociabilidade precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Entusiasmo == "" || $Entusiasmo == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Entusiasmo precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Cap_Sonhar == "" || $Cap_Sonhar == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Cap_Sonhar precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Automotivacao == "" || $Automotivacao == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Automotivacao precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Independencia == "" || $Independencia == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Independencia precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
 	}else{
 		echo"<script language='javascript' type='text/javascript'>alert('Ah Velha');window.location.href='cadastroPessoaForm.php';</script>";
 	}
