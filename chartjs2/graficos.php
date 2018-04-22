@@ -24,18 +24,18 @@
 		<form action="apresentaRadar.php" method="post">
 			<fieldset>
 				<div class="campo">
-					<label>Time</label>
-          <select name="time" id="time">
-              <?php
-                $register = new Option();
-                $query = "SELECT time FROM avaliacoes WHERE login = '$login_cookie' group by time";
-                $option = $register->optionList($query);
+					  <label>Time</label>
+					  <select name="time" id="time">
+					      <?php
+						$register = new Option();
+						$query = "SELECT time FROM avaliacoes WHERE login = '$login_cookie' group by time";
+						$option = $register->optionList($query);
 
-                foreach ($option as $o) {
-                    echo "<option>" . $o['time'] . "</option>";
-                }
-              ?>
-          </select>           
+						for ($i = 0; $i < count($option); $i++) {
+						    echo $option[$i]['time'];
+						}
+					      ?>
+					  </select>           
 				</div>
 				<button type="submit" name="submit">Salvar</button>
 			</fieldset>
