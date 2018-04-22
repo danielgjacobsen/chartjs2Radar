@@ -3,6 +3,7 @@
   error_reporting(E_ALL);
   $login_cookie = $_COOKIE['login'];
   $perfil_cookie = $_COOKIE['perfil'];
+  $time_cookie = $_COOKIE['time'];
   if(!isset($login_cookie)){
     echo"<script language='javascript' type='text/javascript'>alert('Necessário realizar login para acessar esta funcionalidade!');window.location.href='login.html';</script>";
     die();
@@ -24,7 +25,7 @@
 			<fieldset>
 				<div class="campo">
 					<label for="time">Time</label>
-					<input type="text" id="time" name="time" style="width: 500px" value="">
+					<input type="text" id="time" name="time" style="width: 500px" value="<?php echo '$time_cookie' ?>">
 				</div>
 				<div class="campo">
 					<label for="Pessoa">Pessoa</label>
@@ -33,10 +34,10 @@
 				<div class="campo">
 					<label>L&iacute;der</label>
 					<label>
-						<input type="radio" name="sim" value="sim"> Sim
+						<input type="radio" name="lider" value="sim"> Sim
 					</label>
 					<label>
-						<input type="radio" name="nao" value="nao" checked=true> N&atilde;o
+						<input type="radio" name="lider" value="nao" checked=true> N&atilde;o
 					</label>
 				</div>
 				<div class="campo">
@@ -115,7 +116,7 @@
 					<label>Independencia </label>
 					<input type="text" id="Independencia " name="Independencia " style="width: 50px" value="">
 				</div>
-				<button type="submit" name="submit">Enviar</button>
+				<button type="submit" name="submit">Salvar</button>
 			</fieldset>
 		</form>
 	</body>
