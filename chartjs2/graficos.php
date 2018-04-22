@@ -11,7 +11,7 @@
   $query = "SELECT time FROM avaliacoes WHERE login = '$login_cookie' group by time order by time";
   $select = mysqli_query($connect, $query);
   $option = '';
-  while($row = mysql_fetch_assoc($select)){
+  while($row = mysqli_fetch_assoc($select)){
     $option .= '<option value = "'.$row['time'].'">'.$row['time'].'</option>';
   }
 ?>
