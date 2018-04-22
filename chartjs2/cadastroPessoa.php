@@ -20,6 +20,7 @@ $Empatia = $_POST['Empatia'];
 $Sociabilidade = $_POST['Sociabilidade'];
 $Entusiasmo = $_POST['Entusiasmo'];
 $Cap_Sonhar = $_POST['Cap_Sonhar'];
+$Concentracao = $_POST['Concentracao'];
 $Automotivacao = $_POST['Automotivacao'];
 $Independencia = $_POST['Independencia'];
 setcookie("time",$time);
@@ -60,6 +61,8 @@ if(isset($login)){
 		echo"<script language='javascript' type='text/javascript'>alert('O campo Empatia precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
 	}else if($Sociabilidade == "" || $Sociabilidade == null){
 		echo"<script language='javascript' type='text/javascript'>alert('O campo Sociabilidade precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
+	}else if($Concentracao == "" || $Concentracao == null){
+		echo"<script language='javascript' type='text/javascript'>alert('O campo Concentracao precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
 	}else if($Entusiasmo == "" || $Entusiasmo == null){
 		echo"<script language='javascript' type='text/javascript'>alert('O campo Entusiasmo precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
 	}else if($Cap_Sonhar == "" || $Cap_Sonhar == null){
@@ -69,7 +72,7 @@ if(isset($login)){
 	}else if($Independencia == "" || $Independencia == null){
 		echo"<script language='javascript' type='text/javascript'>alert('O campo Independencia precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
 	}else{
-		$query = "INSERT INTO avaliacoes (login,time,pessoa,lider,Agressividade,Desenv_Relacionamento,Facilidade_Mudancas,Extroversao,Dominancia,Desenv_Trab,Formalidade,Condescendencia,Perfil_Tecnico,Exatidao,Detalhismo,Perfil_Artistico,Paciencia,Empatia,Sociabilidade,Entusiasmo,Cap_Sonhar,Automotivacao,Independencia) VALUES ('$login','$time','$pessoa','$lider',$Agressividade,$Desenv_Relacionamento,$Facilidade_Mudancas,$Extroversao,$Dominancia,$Desenv_Trab,$Formalidade,$Condescendencia,$Perfil_Tecnico,$Exatidao,$Detalhismo,$Perfil_Artistico,$Paciencia,$Empatia,$Sociabilidade,$Entusiasmo,$Cap_Sonhar,$Automotivacao,$Independencia)";
+		$query = "INSERT INTO avaliacoes (login,time,pessoa,lider,Agressividade,Desenv_Relacionamento,Facilidade_Mudancas,Extroversao,Dominancia,Desenv_Trab,Formalidade,Condescendencia,Perfil_Tecnico,Exatidao,Detalhismo,Perfil_Artistico,Paciencia,Empatia,Sociabilidade,Entusiasmo,Cap_Sonhar,Automotivacao,Independencia,Concentracao) VALUES ('$login','$time','$pessoa','$lider',$Agressividade,$Desenv_Relacionamento,$Facilidade_Mudancas,$Extroversao,$Dominancia,$Desenv_Trab,$Formalidade,$Condescendencia,$Perfil_Tecnico,$Exatidao,$Detalhismo,$Perfil_Artistico,$Paciencia,$Empatia,$Sociabilidade,$Entusiasmo,$Cap_Sonhar,$Automotivacao,$Independencia,$Concentracao)";
 		$insert = mysqli_query($connect, $query);
 		if($insert){
 			echo"<script language='javascript' type='text/javascript'>alert('Cadastrado realizado com sucesso!');window.location.href='cadastroPessoaForm.php'</script>";
