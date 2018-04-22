@@ -27,7 +27,7 @@
 		<?php 
 			include 'menu.php';
 		?>
-		<form action="apresentaRadar.php" method="post">
+		<form action="setaTime.php" method="post">
 			<fieldset>
 				<div class="campo">
 					  <label>Time</label>
