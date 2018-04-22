@@ -51,7 +51,7 @@ $(document).ready(function() {
 					line: {
 						tension: 0.000001
 					}
-				}
+				},
 				scale: {
 					ticks: {
 					    beginAtZero: true,
