@@ -28,7 +28,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/Chart.min.js"></script>
     <script src="js/utils.js"></script>
-    <script src="js/radar-db-php.js"></script>
+    <script src="js/radar-avaliacoes-db-php.js"></script>
     
 </body>
 </html>
