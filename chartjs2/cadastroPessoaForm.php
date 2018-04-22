@@ -25,7 +25,7 @@
 		<?php 
 			include 'menu.php';
 		?>
-		<form action="#" method="post">
+		<form action="cadastroPessoa.php" method="post">
 			<fieldset>
 				<div class="campo">
 					<label for="time">Time</label>
