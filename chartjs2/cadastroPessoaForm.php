@@ -117,6 +117,10 @@
 					<input type="text" id="Automotivacao" name="Automotivacao" style="width: 50px" value="">
 				</div>
 				<div class="campo">
+					<label>Concentracao</label>
+					<input type="text" id="Concentracao" name="Concentracao" style="width: 50px" value="">
+				</div>
+				<div class="campo">
 					<label>Independencia </label>
 					<input type="text" id="Independencia" name="Independencia" style="width: 50px" value="">
 				</div>
