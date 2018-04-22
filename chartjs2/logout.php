@@ -3,5 +3,6 @@
     error_reporting(E_ALL);
     setcookie("perfil", "");
     setcookie("login","");
+    setcookie("time","");
     header("Location:index.php");
 ?>
