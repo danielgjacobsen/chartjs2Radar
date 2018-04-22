@@ -2,7 +2,7 @@
   ini_set('display_errors', true);
   error_reporting(E_ALL);
   $login_cookie = $_COOKIE['login'];
-  $perfil = $_COOKIE['perfil'];
+  $perfil_cookie = $_COOKIE['perfil'];
   if(!isset($login_cookie)){
     echo"<script language='javascript' type='text/javascript'>alert('Necessário realizar login para acessar esta funcionalidade!');window.location.href='login.html';</script>";
     die();
