@@ -14,7 +14,7 @@ $(document).ready(function() {
 			var presets = window.chartColors;
 			var utils = Samples.utils;
 			
-			var ctx1 = $("#radar-chartcanvas-1");
+			var ctx1 = $("#radar-avaliacoes");
 
 			var datasetValue = [];
 			
