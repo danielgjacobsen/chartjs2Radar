@@ -52,6 +52,12 @@ $(document).ready(function() {
 						tension: 0.000001
 					}
 				}
+				scale: {
+					ticks: {
+					    beginAtZero: true,
+					    max: 100
+					}
+				}
 			};
 
 
