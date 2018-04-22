@@ -8,6 +8,12 @@
     die();
   }
   $connect = mysqli_connect('localhost', 'root', '12qwaszx', 'selo');
+  $query = "SELECT time FROM avaliacoes WHERE login = '$login_cookie' group by time order by time";
+  $select = mysqli_query($connect, $query);
+  $option = '';
+  while($row = mysql_fetch_assoc($select)){
+    $option .= '<option value = "'.$row['time'].'">'.$row['time'].'</option>';
+  }
 ?>
 <!doctype html>
 	<head>
@@ -26,18 +32,10 @@
 				<div class="campo">
 					  <label>Time</label>
 					  <select name="time" id="time">
-					      <?php
-						$register = new Option();
-						$query = "SELECT time FROM avaliacoes WHERE login = '$login_cookie' group by time";
-						$option = $register->optionList($query);
-
-						for ($i = 0; $i < count($option); $i++) {
-						    echo $option[$i]['time'];
-						}
-					      ?>
+					      <?php echo $option; ?>
 					  </select>           
 				</div>
-				<button type="submit" name="submit">Salvar</button>
+				<button type="submit" name="submit">Gerar Gráfico</button>
 			</fieldset>
 		</form>
 	</body>
