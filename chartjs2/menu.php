@@ -7,6 +7,7 @@
       }
     ?>		
     <li><a href='cadastroPessoaForm.php'>Novo</a></li>
+    <li><a href='graficos.php'>Gr&aacute;ficos</a></li>
     <li><a href='logout.php'>Sair</a></li>
   </ul>
 </div>
