@@ -25,7 +25,7 @@
 			<fieldset>
 				<div class="campo">
 					<label for="time">Time</label>
-					<input type="text" id="time" name="time" style="width: 500px" value="<?php echo '$time_cookie' ?>">
+					<input type="text" id="time" name="time" style="width: 500px" value="<?php echo $time_cookie;?>">
 				</div>
 				<div class="campo">
 					<label for="Pessoa">Pessoa</label>
