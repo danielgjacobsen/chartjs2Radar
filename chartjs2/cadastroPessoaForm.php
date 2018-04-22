@@ -28,7 +28,7 @@
 				</div>
 				<div class="campo">
 					<label for="Pessoa">Pessoa</label>
-					<input type="text" id="pessoa" name="pessoa" style="width: "500px" value="">
+					<input type="text" id="pessoa" name="pessoa" style="width: 500px" value="">
 				</div>
 				<div class="campo">
 					<label>L&iacute;der</label>
@@ -36,46 +36,87 @@
 						<input type="radio" name="sim" value="sim"> Sim
 					</label>
 					<label>
-						<input type="radio" name="nao" value="nao"> N&atilde;o
+						<input type="radio" name="nao" value="nao" checked=true> N&atilde;o
 					</label>
 				</div>
 				<div class="campo">
 					<label>Agressividade</label>
-<input type="text" id="email" name="email" style="width: 20em" value="">
-</div>
-<div class="campo">
-<label for="telefone">Telefone</label>
-<input type="text" id="telefone" name="telefone" style="width: 10em" value="">
-</div>
-
-<fieldset class="grupo">
-<div class="campo">
-<label for="cidade">Cidade</label>
-<input type="text" id="cidade" name="cidade" style="width: 10em" value="">
-</div>
-<div class="campo">
-<label for="estado">Estado</label>
-<select name="estado" id="estado">
-<option value="">--</option>
-<option value="PR">PR</option>
-</select>
-</div>
-</fieldset>
-
-<div class="campo">
-<label for="mensagem">Mensagem</label>
-<textarea rows="6" style="width: 20em" id="mensagem" name="mensagem"></textarea>
-</div>
-
-<div class="campo">
-<label>Newsletter</label>
-<label>
-<input type="checkbox" name="newsletter" value="1"> Gostaria de receber a Newsletter da empresa
-</label>
-</div>
-
-<button type="submit" name="submit">Enviar</button>
-</fieldset>
-</form>
+					<input type="text" id="Agressividade" name="Agressividade" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Desenv_Relacionamento</label>
+					<input type="text" id="Desenv_Relacionamento" name="Desenv_Relacionamento" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Facilidade_Mudancas</label>
+					<input type="text" id="Facilidade_Mudancas" name="Facilidade_Mudancas" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Extroversao</label>
+					<input type="text" id="Extroversao" name="Extroversao" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Dominancia</label>
+					<input type="text" id="Dominancia" name="Dominancia" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Desenv_Trab</label>
+					<input type="text" id="Desenv_Trab" name="Desenv_Trab" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Formalidade</label>
+					<input type="text" id="Formalidade" name="Formalidade" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Condescendencia</label>
+					<input type="text" id="Condescendencia" name="Condescendencia" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Perfil_Tecnico</label>
+					<input type="text" id="Perfil_Tecnico" name="Perfil_Tecnico" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Exatidao</label>
+					<input type="text" id="Exatidao" name="Exatidao" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Detalhismo</label>
+					<input type="text" id="Detalhismo" name="Detalhismo" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Perfil_Artistico</label>
+					<input type="text" id="Perfil_Artistico" name="Perfil_Artistico" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Paciencia</label>
+					<input type="text" id="Paciencia" name="Paciencia" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Empatia</label>
+					<input type="text" id="Empatia" name="Empatia" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Sociabilidade</label>
+					<input type="text" id="Sociabilidade" name="Sociabilidade" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Entusiasmo</label>
+					<input type="text" id="Entusiasmo" name="Entusiasmo" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Cap_Sonhar</label>
+					<input type="text" id="Cap_Sonhar" name="Cap_Sonhar" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Automotivacao</label>
+					<input type="text" id="Automotivacao" name="Automotivacao" style="width: 50px" value="">
+				</div>
+				<div class="campo">
+					<label>Independencia </label>
+					<input type="text" id="Independencia " name="Independencia " style="width: 50px" value="">
+				</div>
+				<button type="submit" name="submit">Enviar</button>
+			</fieldset>
+		</form>
 	</body>
 <html>
