@@ -118,7 +118,7 @@
 				</div>
 				<div class="campo">
 					<label>Independencia </label>
-					<input type="text" id="Independencia " name="Independencia " style="width: 50px" value="">
+					<input type="text" id="Independencia" name="Independencia" style="width: 50px" value="">
 				</div>
 				<button type="submit" name="submit">Salvar</button>
 			</fieldset>
