@@ -4,7 +4,7 @@ $(document).ready(function() {
 	 * call the data.php file to fetch the result from db table.
 	 */
 	$.ajax({
-		url : "http://35.224.227.85/chartjs2/api/data.php",
+		url : "http://35.224.227.85/chartjs2/api/data-avaliacoes.php",
 		type : "GET",
 		success : function(data){
 			console.log(data);
