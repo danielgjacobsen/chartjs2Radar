@@ -20,7 +20,7 @@ $(document).ready(function() {
 			
 			for (var i=0; i<len; i++) {
 				datasetValue[i] = {
-					label : data[i].nome,
+					label : data[i].pessoa,
 					backgroundColor: utils.transparentize(colors[i]),
 					borderColor: colors[i],
 					fill: '-1',
