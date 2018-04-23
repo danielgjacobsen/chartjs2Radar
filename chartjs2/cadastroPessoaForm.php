@@ -49,23 +49,23 @@
 					<input type="text" id="Agressividade" name="Agressividade" style="width: 50px" value="">
 				</div>
 				<div class="campo">
-					<label>Desenv_Relacionamento</label>
+					<label>Desenv. Relacionamento</label>
 					<input type="text" id="Desenv_Relacionamento" name="Desenv_Relacionamento" style="width: 50px" value="">
 				</div>
 				<div class="campo">
-					<label>Facilidade_Mudancas</label>
+					<label>Facilidade com Mudan&ccedil;as</label>
 					<input type="text" id="Facilidade_Mudancas" name="Facilidade_Mudancas" style="width: 50px" value="">
 				</div>
 				<div class="campo">
-					<label>Extroversao</label>
+					<label>Extrovers&atilde;o</label>
 					<input type="text" id="Extroversao" name="Extroversao" style="width: 50px" value="">
 				</div>
 				<div class="campo">
-					<label>Dominancia</label>
+					<label>Domin&acirc;ncia</label>
 					<input type="text" id="Dominancia" name="Dominancia" style="width: 50px" value="">
 				</div>
 				<div class="campo">
-					<label>Desenv_Trab</label>
+					<label>Desenv. Trabalho</label>
 					<input type="text" id="Desenv_Trab" name="Desenv_Trab" style="width: 50px" value="">
 				</div>
 				<div class="campo">
@@ -73,15 +73,15 @@
 					<input type="text" id="Formalidade" name="Formalidade" style="width: 50px" value="">
 				</div>
 				<div class="campo">
-					<label>Condescendencia</label>
+					<label>Condescend&ecirc;ncia</label>
 					<input type="text" id="Condescendencia" name="Condescendencia" style="width: 50px" value="">
 				</div>
 				<div class="campo">
-					<label>Perfil_Tecnico</label>
+					<label>Perfil T&eacute;cnico</label>
 					<input type="text" id="Perfil_Tecnico" name="Perfil_Tecnico" style="width: 50px" value="">
 				</div>
 				<div class="campo">
-					<label>Exatidao</label>
+					<label>Exatid&atilde;o</label>
 					<input type="text" id="Exatidao" name="Exatidao" style="width: 50px" value="">
 				</div>
 				<div class="campo">
@@ -89,11 +89,11 @@
 					<input type="text" id="Detalhismo" name="Detalhismo" style="width: 50px" value="">
 				</div>
 				<div class="campo">
-					<label>Perfil_Artistico</label>
+					<label>Perfil Art&iacute;stico</label>
 					<input type="text" id="Perfil_Artistico" name="Perfil_Artistico" style="width: 50px" value="">
 				</div>
 				<div class="campo">
-					<label>Paciencia</label>
+					<label>Paci&ecirc;ncia</label>
 					<input type="text" id="Paciencia" name="Paciencia" style="width: 50px" value="">
 				</div>
 				<div class="campo">
@@ -109,19 +109,19 @@
 					<input type="text" id="Entusiasmo" name="Entusiasmo" style="width: 50px" value="">
 				</div>
 				<div class="campo">
-					<label>Cap_Sonhar</label>
+					<label>Capacidade de Sonhar</label>
 					<input type="text" id="Cap_Sonhar" name="Cap_Sonhar" style="width: 50px" value="">
 				</div>
 				<div class="campo">
-					<label>Automotivacao</label>
+					<label>Automotiva&ccedil;&atilde;o</label>
 					<input type="text" id="Automotivacao" name="Automotivacao" style="width: 50px" value="">
 				</div>
 				<div class="campo">
-					<label>Concentracao</label>
+					<label>Concentra&ccedil;&atilde;o</label>
 					<input type="text" id="Concentracao" name="Concentracao" style="width: 50px" value="">
 				</div>
 				<div class="campo">
-					<label>Independencia </label>
+					<label>Independ&ecirc;ncia</label>
 					<input type="text" id="Independencia" name="Independencia" style="width: 50px" value="">
 				</div>
 				<button type="submit" name="submit">Salvar</button>
