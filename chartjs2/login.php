@@ -15,6 +15,7 @@
 		setcookie("perfil", $row["perfil"]);
 	    }
 	    setcookie("login",$login);
+	    setcookie("menuSel","Home");
 	    header("Location:index.php");
 	}
     }
