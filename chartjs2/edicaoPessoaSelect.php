@@ -36,8 +36,9 @@
 		<form action="cadastroPessoa.php" method="post">
 			<fieldset>
 				<div class="campo">
-					<label for="time">Time</label>
-					<input type="text" id="time" name="time" style="width: 500px" value="<?php echo $time_cookie;?>">
+					<select name="time" id="time">
+				      		<?php echo $optionTime; ?>
+				  	</select>
 				</div>
 				
 				<button type="submit" name="submit">Salvar</button>
