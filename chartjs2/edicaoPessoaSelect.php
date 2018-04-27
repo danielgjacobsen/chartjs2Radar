@@ -1,3 +1,4 @@
+https://www.w3schools.com/php/php_ajax_database.asp
 <?php
   ini_set('display_errors', true);
   error_reporting(E_ALL);
@@ -19,12 +20,27 @@
   while($row = mysqli_fetch_assoc($select)){
     $optionTime .= '<option value = "'.$row['time'].'">'.$row['time'].'</option>';
   }
-  $query = "SELECT pessoa FROM avaliacoes WHERE login = '$login_cookie' group by pessoa order by pessoa";
-  $select = mysqli_query($connect, $query);
-  $optionPessoa = '';
-  while($row = mysqli_fetch_assoc($select)){
-    $optionPessoa .= '<option value = "'.$row['pessoa'].'">'.$row['pessoa'].'</option>';
-  }
+  function showPessoas(str) {
+    if (str == "") {
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else { 
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","getpessoas.php?q="+str,true);
+        xmlhttp.send();
+    }
+}
 ?>
 <!doctype html>
 	<head>
@@ -42,15 +58,9 @@
 			<fieldset>
 				<div class="campo">
 					<label>Time</label>
-					<select name="time" id="time">
+					<select name="time" id="time" onchange="showPessoas(this.value)">
 					    <?php echo $optionTime; ?>
 					</select>
-				</div>
-				<div class="campo">
-					<label for="Pessoa">Pessoa</label>
-					<select name="pessoa" id="pessoa">
-				            <?php echo $optionPessoa; ?>
-				        </select>
 				</div>
 				<button type="submit" name="submit">Editar</button>
 			</fieldset>
