@@ -14,6 +14,7 @@
   while($row = mysqli_fetch_assoc($select)){
     $option .= '<option value = "'.$row['time'].'">'.$row['time'].'</option>';
   }
+  mysqli_close($connect);
 ?>
 <!doctype html>
 	<head>
