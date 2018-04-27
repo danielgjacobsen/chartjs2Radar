@@ -11,6 +11,7 @@
       }
     ?>		
     <li <?php if($menuSel=='Novo'){ echo"class='active'"; } ?>><a href='cadastroPessoaForm.php' onclick='document.cookie = "menuSel=Novo"'>Novo</a></li>
+    <li <?php if($menuSel=='Editar'){ echo"class='active'"; } ?>><a href='edicaoPessoaSelect.php' onclick='document.cookie = "menuSel=Editar"'>Editar</a></li>
     <li <?php if($menuSel=='Graficos'){ echo"class='active'"; } ?>><a href='graficos.php' onclick='document.cookie = "menuSel=Graficos"'>Gr&aacute;ficos</a></li>
     <li><a href='logout.php'>Sair</a></li>
   </ul>
