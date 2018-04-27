@@ -81,7 +81,9 @@ if(isset($login)){
 		}
 	}
 }else{	
+	mysqli_close($connect);
 	echo"<script language='javascript' type='text/javascript'>alert('Para acessar o sistema, faça login!');</script>";
 	header("Location:login.html");
 }
+mysqli_close($connect);
 ?>
