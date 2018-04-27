@@ -1,4 +1,3 @@
-https://www.w3schools.com/php/php_ajax_database.asp
 <?php
   ini_set('display_errors', true);
   error_reporting(E_ALL);
