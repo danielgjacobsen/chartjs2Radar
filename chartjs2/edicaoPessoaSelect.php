@@ -62,6 +62,7 @@ https://www.w3schools.com/php/php_ajax_database.asp
 					    <?php echo $optionTime; ?>
 					</select>
 				</div>
+				<div id="txtHint"><b>Selecione o time para abrir a lista das pessoas...</b></div>
 				<button type="submit" name="submit">Editar</button>
 			</fieldset>
 		</form>
