@@ -12,6 +12,19 @@
     echo"<script language='javascript' type='text/javascript'>alert('Necessário realizar login para acessar esta funcionalidade!');window.location.href='login.html';</script>";
     die();
   }
+  $connect = mysqli_connect('localhost', 'root', '12qwaszx', 'selo');
+  $query = "SELECT time FROM avaliacoes WHERE login = '$login_cookie' group by time order by time";
+  $select = mysqli_query($connect, $query);
+  $optionTime = '';
+  while($row = mysqli_fetch_assoc($select)){
+    $optionTime .= '<option value = "'.$row['time'].'">'.$row['time'].'</option>';
+  }
+  $query = "SELECT pessoa FROM avaliacoes WHERE login = '$login_cookie' group by pessoa order by pessoa";
+  $select = mysqli_query($connect, $query);
+  $optionPessoa = '';
+  while($row = mysqli_fetch_assoc($select)){
+    $optionPessoa .= '<option value = "'.$row['pessoa'].'">'.$row['pessoa'].'</option>';
+  }
 ?>
 <!doctype html>
 	<head>
@@ -28,12 +41,16 @@
 		<form action="edicaoPessoaForm.php" method="post">
 			<fieldset>
 				<div class="campo">
-					<label for="time">Time</label>
-					<input type="text" id="time" name="time" style="width: 500px" value="<?php echo $time_cookie;?>">
+					<label>Time</label>
+					<select name="time" id="time">
+					    <?php echo $optionTime; ?>
+					</select>
 				</div>
 				<div class="campo">
 					<label for="Pessoa">Pessoa</label>
-					<input type="text" id="pessoa" name="pessoa" style="width: 500px" value="">
+					<select name="pessoa" id="pessoa">
+				            <?php echo $optionPessoa; ?>
+				        </select>
 				</div>
 				<button type="submit" name="submit">Editar</button>
 			</fieldset>
