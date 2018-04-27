@@ -20,6 +20,7 @@ https://www.w3schools.com/php/php_ajax_database.asp
   while($row = mysqli_fetch_assoc($select)){
     $optionTime .= '<option value = "'.$row['time'].'">'.$row['time'].'</option>';
   }
+  mysqli_close($connect);
   function showPessoas(str) {
     if (str == "") {
         document.getElementById("txtHint").innerHTML = "";
@@ -62,7 +63,7 @@ https://www.w3schools.com/php/php_ajax_database.asp
 					    <?php echo $optionTime; ?>
 					</select>
 				</div>
-				<div id="txtHint"><b>Selecione o time para abrir a lista das pessoas...</b></div>
+				<div class="campo" id="txtHint"><b>Selecione o time para abrir a lista das pessoas...</b></div>
 				<button type="submit" name="submit">Editar</button>
 			</fieldset>
 		</form>
