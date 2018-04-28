@@ -7,9 +7,18 @@ $query = "SELECT * FROM avaliacoes WHERE login = '$login_cookie' and time = '$t'
 $select = mysqli_query($connect, $query);
 
 while($row = mysqli_fetch_array($select)) {
-  echo "<div class='campo'>
+  echo "<hr>
+        <div class='campo'>
                 <label>Time</label>
                 <input type='text' id='time' name='time' style='width: 500px' value=" . $row['time'] . ">
+        </div>
+        <div class='campo'>
+                <label>Pessoa</label>
+                <input type='text' id='pessoa' name='pessoa' style='width: 500px' value=" . $row['pessoa'] . ">
+        </div>
+        <div class='campo'>
+                <label>Pessoa</label>
+                <input type='text' id='pessoa' name='pessoa' style='width: 500px' value=" . $row['pessoa'] . ">
         </div>";
 }
 
