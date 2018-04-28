@@ -33,6 +33,7 @@
 			function showPessoas(str) {
 			    if (str == "") {
 				document.getElementById("txtHint").innerHTML = "";
+				document.getElementById("txtAval").innerHTML = "";
 				return;
 			    } else { 
 				jsTime = str;
@@ -54,6 +55,7 @@
 			}
 			function showAvaliacao(str) {
 			    if (str == "") {
+				document.getElementById("txtHint").innerHTML = "";
 				document.getElementById("txtAval").innerHTML = "";
 				return;
 			    } else { 
