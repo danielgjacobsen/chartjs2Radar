@@ -29,11 +29,13 @@
 	   	<link rel="stylesheet" href="css/formulario.css">
 	   	<title>Selo</title>
 	   	<script>
+			var jsTime = "";
 			function showPessoas(str) {
 			    if (str == "") {
 				document.getElementById("txtHint").innerHTML = "";
 				return;
 			    } else { 
+				jsTime = str;
 				if (window.XMLHttpRequest) {
 				    // code for IE7+, Firefox, Chrome, Opera, Safari
 				    xmlhttp = new XMLHttpRequest();
@@ -67,7 +69,7 @@
 					document.getElementById("txtAval").innerHTML = this.responseText;
 				    }
 				};
-				xmlhttp.open("GET","getavaliacao.php?q="+str,true);
+				xmlhttp.open("GET","getavaliacao.php?p="+str+"&t="+jsTime,true);
 				xmlhttp.send();
 			    }
 			}
