@@ -59,6 +59,7 @@
 		<form action="cadastroPessoa.php" method="post">
 			<fieldset>
 				<div class="campo">
+					<label>Time</label>
 					<select name="time" id="time" onchange="showPessoas(this.value)">
 				      		<?php echo $optionTime; ?>
 				  	</select>
