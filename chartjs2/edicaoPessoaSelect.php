@@ -52,7 +52,6 @@
 			}
 			function showAvaliacao(str) {
 			    alert(str);
-			    }
 			}
 	    	</script>
 	</head>
