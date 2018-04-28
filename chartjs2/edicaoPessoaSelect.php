@@ -60,12 +60,12 @@
 			<fieldset>
 				<div class="campo">
 					<label>Time</label>
-					<select name="time" id="time" onchange="showPessoas(this.value)">
+					<select name="time" id="time" onchange="showPessoas(this.value)" style="width: 500px">
 				      		<?php echo $optionTime; ?>
 				  	</select>
 				</div>
 				<div class="campo" id="txtHint"><b>Selecione o time para abrir a lista das pessoas...</b></div>
-				<button type="submit" name="submit">Salvar</button>
+				<button type="submit" name="submit">Editar</button>
 			</fieldset>
 		</form>
 	</body>
