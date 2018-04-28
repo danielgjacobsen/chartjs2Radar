@@ -4,15 +4,19 @@
 
 </head>
 <body>
+<?php
+$q = intval($_GET['q']);
 
-<table>
-<tr>
-<th>Firstname</th>
-<th>Lastname</th>
-<th>Age</th>
-<th>Hometown</th>
-<th>Job</th>
-</tr>
-</table>
+$connect = mysqli_connect('localhost', 'root', '12qwaszx', 'selo');
+$query = "SELECT pessoa FROM avaliacoes WHERE login = '$login_cookie' and time = '".$q."' group by pessoa order by pessoa";
+$select = mysqli_query($connect, $query);
+echo "<label>Pessoa</label>
+<select name="pessoa" id="pessoa">
+while($row = mysqli_fetch_array($select)) {
+    echo "<option value = " . $row['pessoa'] . ">" . $row['pessoa'] . "</option>";
+}
+echo "</select>";
+mysqli_close($connect);
+?>
 </body>
 </html>
