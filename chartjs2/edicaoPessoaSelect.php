@@ -80,7 +80,7 @@
 			include 'menu.php';
 		?>
 		<form action="cadastroPessoa.php" method="post">
-			<fieldset id="txtAval">
+			<fieldset>
 				<div class="campo">
 					<label>Time</label>
 					<select name="time" id="time" onchange="showPessoas(this.value)" style="width: 500px">
@@ -89,7 +89,8 @@
 				  	</select>
 				</div>
 				<div class="campo" id="txtHint"><b>Selecione o time para abrir a lista das pessoas...</b></div>
-				
+			</fieldset>
+			<fieldset id="txtAval">
 			</fieldset>
 		</form>
 	</body>
