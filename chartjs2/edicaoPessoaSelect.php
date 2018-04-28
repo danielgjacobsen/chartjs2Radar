@@ -50,6 +50,10 @@
 				xmlhttp.send();
 			    }
 			}
+			function showAvaliacao(str) {
+			    alert(str);
+			    }
+			}
 	    	</script>
 	</head>
 	<body>
@@ -66,6 +70,7 @@
 				  	</select>
 				</div>
 				<div class="campo" id="txtHint"><b>Selecione o time para abrir a lista das pessoas...</b></div>
+				<div class="campo" id="txtAval"></div>
 				<button type="submit" name="submit">Editar</button>
 			</fieldset>
 		</form>
