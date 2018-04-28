@@ -46,6 +46,7 @@
 					document.getElementById("txtHint").innerHTML = this.responseText;
 				    }
 				};
+				    alert(str);
 				xmlhttp.open("GET","getpessoas.php?q="+str,true);
 				xmlhttp.send();
 			    }
