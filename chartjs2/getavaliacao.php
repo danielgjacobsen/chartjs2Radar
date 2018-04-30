@@ -20,17 +20,17 @@ while($row = mysqli_fetch_array($select)) {
         <div class='campo'>
                 <label>L&iacute;der</label>
                 <label>";
-  if($row['lider'] == 'sim'){
-    echo "<input type='radio' name='lider' value='sim' checked=true> Sim ";
+  if($row['lider']=="sim"){
+    echo "<input type='radio' name='lider' value='sim' checked> Sim ";
   }else{
-    echo "<input type='radio' name='lider' value='sim' checked=false> Sim ";
+    echo "<input type='radio' name='lider' value='sim'> Sim ";
   }
   echo "        </label>
                 <label>";
-  if($row['lider'] == 'sim'){
-    echo "<input type='radio' name='lider' value='nao' checked=false> N&atilde;o ";
+  if($row['lider']=="nao"){
+    echo "<input type='radio' name='lider' value='nao' checked> N&atilde;o ";
   }else{
-    echo "<input type='radio' name='lider' value='nao' checked=true> N&atilde;o ";
+    echo "<input type='radio' name='lider' value='nao'> N&atilde;o ";
   }
   echo "                    
                 </label>
