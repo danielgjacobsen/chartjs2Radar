@@ -85,7 +85,7 @@
 			<fieldset>
 				<div class="campo">
 					<label>Time</label>
-					<select name="time" id="time" onchange="showPessoas(this.value)" style="width: 500px">
+					<select name="selTime" id="selTime" onchange="showPessoas(this.value)" style="width: 500px">
 						<option value="">Selecione o time</option>
 				      		<?php echo $optionTime; ?>
 				  	</select>
