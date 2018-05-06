@@ -81,7 +81,7 @@
 		<?php 
 			include 'menu.php';
 		?>
-		<form action="cadastroPessoa.php" method="post">
+		<form action="edicaoPessoa.php" method="post">
 			<fieldset>
 				<div class="campo">
 					<label>Time</label>
