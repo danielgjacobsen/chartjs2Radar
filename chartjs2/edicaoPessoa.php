@@ -78,7 +78,7 @@ if(isset($login)){
 		if($queryExecute){
 			echo"<script language='javascript' type='text/javascript'>alert('Cadastrado realizado com sucesso!');window.location.href='edicaoPessoaSelect.php'</script>";
 		}else{
-			echo"<script language='javascript' type='text/javascript'>alert('Não foi possível realizar o cadastro. Verifique se ja existe avaliação para esta pessoa!');window.location.href='edicaoPessoaSelect.php'</script>";
+			echo"<script language='javascript' type='text/javascript'>alert('Não foi possível realizar o cadastro. Verifique se já existe avaliação para esta pessoa neste time!');window.location.href='edicaoPessoaSelect.php'</script>";
 		}
 	}
 }else{	
