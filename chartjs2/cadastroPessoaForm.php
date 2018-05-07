@@ -19,13 +19,21 @@
 	   <meta name="viewport" content="width=device-width, initial-scale=1">
 	   <link rel="stylesheet" href="css/menu_styles.css">
 	   <link rel="stylesheet" href="css/formulario.css">
+	   	<script>
+		function validaCampos() {
+		    if(document.forms["myForm"]["time"].value == "") {
+			alert("o campo Time precisa ser preenchido!");
+			return false;
+		    }
+		}
+		</script>
 	   <title>Selo</title>
 	</head>
 	<body>
 		<?php 
 			include 'menu.php';
 		?>
-		<form action="cadastroPessoa.php" method="post">
+		<form action="cadastroPessoa.php" method="post" onsubmit="return validaCampos()" name="myForm">
 			<fieldset>
 				<div class="campo">
 					<label for="time">Time</label>
