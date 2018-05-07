@@ -15,6 +15,7 @@ $query .= "   from avaliacoes ";
 $query .= "  where time = '$time' ";
 $query .= "    and login = '$login' ";
 $query .= "  order by lider ";
+console.log($query);
 $result = mysqli_query($connect, $query);
 $data = array();
 while ($row = mysqli_fetch_object($result)) {
