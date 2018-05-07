@@ -115,6 +115,10 @@ while($row = mysqli_fetch_array($select)) {
 					<label>Independ&ecirc;ncia</label>
 					<input type='number' id='Independencia' name='Independencia' style='width: 50px' value=" . $row['Independencia'] . ">
 				</div>
+				<div class="campo">
+					<label>Apagar esta avalia&ccedil;&atilde;o?</label>
+					<input type="radio" name="apagar" value="sim" checked=false>
+				</div>
 				<button type='submit' name='submit'>Salvar</button>";
 }
 
