@@ -138,7 +138,7 @@
 				</div>
 				<div class="campo">
 					<label>Agressividade</label>
-					<input type="text" id="Agressividade" name="Agressividade" style="width: 50px" value="">
+					<input type="number" id="Agressividade" name="Agressividade" style="width: 50px" value="">
 				</div>
 				<div class="campo">
 					<label>Desenv. Relacionamento</label>
