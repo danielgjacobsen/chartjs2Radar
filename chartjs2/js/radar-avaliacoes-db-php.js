@@ -37,7 +37,7 @@ $(document).ready(function() {
 				title : {
 					display : true,
 					position : "top",
-					text : "Radar do Time ",
+					text : "Radar do Time "+data[0].time,
 					fontSize : 18,
 					fontColor : "#111"
 				},
