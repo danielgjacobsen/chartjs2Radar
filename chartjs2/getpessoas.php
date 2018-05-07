@@ -8,7 +8,7 @@ echo "<label>Pessoa</label>
         <select name='selPessoa' id='selPessoa' style='width: 500px' onchange='showAvaliacao(this.value)'>	
         <option value=''>Selecione a pessoa para editar</option>";
 while($row = mysqli_fetch_array($select)) {
-  echo "<option value = " . $row['pessoa'] . ">" . $row['pessoa'] . "</option>";
+  echo '<option value = "'.$row['pessoa'].'">'.$row['pessoa'].'</option>';
 }
 echo "</select>";
 mysqli_close($connect);
