@@ -11,11 +11,11 @@ while($row = mysqli_fetch_array($select)) {
   echo "<hr>
         <div class='campo'>
                 <label>Time</label>
-                <input type='text' id='time' name='time' style='width: 500px' value=" . $t . ">
+                <input type='text' id='time' name='time' style='width: 500px' value="123456">
         </div>
         <div class='campo'>
                 <label>Pessoa</label>
-                <input type='text' id='pessoa' name='pessoa' style='width: 500px' value=" . $p . ">
+                <input type='text' id='pessoa' name='pessoa' style='width: 500px' value="789">
         </div>
         <div class='campo'>
                 <label>L&iacute;der</label>
