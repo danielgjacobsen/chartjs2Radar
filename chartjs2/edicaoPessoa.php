@@ -25,6 +25,7 @@ $Cap_Sonhar = $_POST['Cap_Sonhar'];
 $Concentracao = $_POST['Concentracao'];
 $Automotivacao = $_POST['Automotivacao'];
 $Independencia = $_POST['Independencia'];
+$apagar = $_POST['apagar'];
 setcookie("time",$time);
 $connect = mysqli_connect('localhost', 'root', '12qwaszx', 'selo');
 if(isset($login)){
@@ -73,12 +74,20 @@ if(isset($login)){
 	}else if($Independencia == "" || $Independencia == null){
 		echo"<script language='javascript' type='text/javascript'>alert('O campo Independencia precisa ser preenchido!');window.location.href='cadastroPessoaForm.php';</script>";
 	}else{
-		$query = "update avaliacoes  set login = '$login',time = '$time',pessoa = '$pessoa',lider = '$lider',Agressividade = $Agressividade,Desenv_Relacionamento = $Desenv_Relacionamento,Facilidade_Mudancas = $Facilidade_Mudancas,Extroversao = $Extroversao,Dominancia = $Dominancia,Desenv_Trab = $Desenv_Trab,Formalidade = $Formalidade,Condescendencia = $Condescendencia,Perfil_Tecnico = $Perfil_Tecnico,Exatidao = $Exatidao,Detalhismo = $Detalhismo,Perfil_Artistico = $Perfil_Artistico,Paciencia = $Paciencia,Empatia = $Empatia,Sociabilidade = $Sociabilidade,Entusiasmo = $Entusiasmo,Cap_Sonhar = $Cap_Sonhar,Automotivacao = $Automotivacao,Independencia = $Independencia,Concentracao = $Concentracao where login = '$login' AND time = '$selTime' AND pessoa = '$selPessoa'";
+		if($apagar == "sim"){
+			$query = "delete from avaliacoes where login = '$login' AND time = '$selTime' AND pessoa = '$selPessoa'";
+		}else{
+			$query = "update avaliacoes  set login = '$login',time = '$time',pessoa = '$pessoa',lider = '$lider',Agressividade = $Agressividade,Desenv_Relacionamento = $Desenv_Relacionamento,Facilidade_Mudancas = $Facilidade_Mudancas,Extroversao = $Extroversao,Dominancia = $Dominancia,Desenv_Trab = $Desenv_Trab,Formalidade = $Formalidade,Condescendencia = $Condescendencia,Perfil_Tecnico = $Perfil_Tecnico,Exatidao = $Exatidao,Detalhismo = $Detalhismo,Perfil_Artistico = $Perfil_Artistico,Paciencia = $Paciencia,Empatia = $Empatia,Sociabilidade = $Sociabilidade,Entusiasmo = $Entusiasmo,Cap_Sonhar = $Cap_Sonhar,Automotivacao = $Automotivacao,Independencia = $Independencia,Concentracao = $Concentracao where login = '$login' AND time = '$selTime' AND pessoa = '$selPessoa'";
+		}
 		$queryExecute = mysqli_query($connect, $query);
 		if($queryExecute){
-			echo"<script language='javascript' type='text/javascript'>alert('Cadastrado realizado com sucesso!');window.location.href='edicaoPessoaSelect.php'</script>";
+			if($apagar == "sim"){
+				echo"<script language='javascript' type='text/javascript'>alert('Avaliação apagada com sucesso!');window.location.href='edicaoPessoaSelect.php'</script>";
+			}else{
+				echo"<script language='javascript' type='text/javascript'>alert('Cadastrado realizado com sucesso!');window.location.href='edicaoPessoaSelect.php'</script>";
+			}
 		}else{
-			echo"<script language='javascript' type='text/javascript'>alert('Não foi possível realizar o cadastro. Verifique se já existe avaliação para esta pessoa neste time!');window.location.href='edicaoPessoaSelect.php'</script>";
+			echo"<script language='javascript' type='text/javascript'>alert('Não foi possível atualizar o cadastro. Verifique se já existe avaliação para esta pessoa neste time!');window.location.href='edicaoPessoaSelect.php'</script>";
 		}
 	}
 }else{	
