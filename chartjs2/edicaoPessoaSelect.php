@@ -75,6 +75,96 @@
 				xmlhttp.send();
 			    }
 			}
+			function validaCampos() {
+				if(document.forms["myForm"]["time"].value == "") {
+					alert("o campo Time precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["pessoa"].value == "") {
+					alert("o campo Pessoa precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Agressividade"].value == "") {
+					alert("o campo Agressividade precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Desenv_Relacionamento"].value == "") {
+					alert("o campo Desenv. Relacionamento precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Facilidade_Mudancas"].value == "") {
+					alert("o campo Facilidade com Mudanças precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Extroversao"].value == "") {
+					alert("o campo Extroversão precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Dominancia"].value == "") {
+					alert("o campo Dominância precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Desenv_Trab"].value == "") {
+					alert("o campo Desenv. Trabalho precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Formalidade"].value == "") {
+					alert("o campo Formalidade precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Condescendencia"].value == "") {
+					alert("o campo Condescendência precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Perfil_Tecnico"].value == "") {
+					alert("o campo Perfil Técnico precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Exatidao"].value == "") {
+					alert("o campo Exatidão precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Detalhismo"].value == "") {
+					alert("o campo Detalhismo precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Perfil_Artistico"].value == "") {
+					alert("o campo Perfil Artístico precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Paciencia"].value == "") {
+					alert("o campo Paciência precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Empatia"].value == "") {
+					alert("o campo Empatia precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Sociabilidade"].value == "") {
+					alert("o campo Sociabilidade precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Entusiasmo"].value == "") {
+					alert("o campo Entusiasmo precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Cap_Sonhar"].value == "") {
+					alert("o campo Capacidade de Sonhar precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Automotivacao"].value == "") {
+					alert("o campo Automotivação precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Concentracao"].value == "") {
+					alert("o campo Concentração precisa ser preenchido!");
+					return false;
+				}
+				if(document.forms["myForm"]["Independencia"].value == "") {
+					alert("o campo Independência precisa ser preenchido!");
+					return false;
+				}
+			    }
 	    	</script>
 	</head>
 	<body>
