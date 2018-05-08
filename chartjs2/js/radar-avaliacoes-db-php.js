@@ -29,7 +29,7 @@ $(document).ready(function() {
 			}
 			
 			var data1 = {
-				labels : ["Agressividade", "Desenv. Relacionamento", "Facilidade Mudancas", "Extroversao", "Dominancia", "Desenv. Trab.", "Formalidade", "Condescendencia", "Concentracao", "Perfil Tecnico", "Exatidao", "Detalhismo", "Perfil Artistico", "Paciencia", "Empatia", "Sociabilidade", "Entusiasmo", "Cap. Sonhar", "Automotivacao", "Independencia"],
+				labels : ["Agressividade", "Desenv. Relacionamento", "Facilidade com Mudanças", "Extroversao", "Dominancia", "Desenv. Trab.", "Formalidade", "Condescendencia", "Concentracao", "Perfil Tecnico", "Exatidao", "Detalhismo", "Perfil Artistico", "Paciencia", "Empatia", "Sociabilidade", "Entusiasmo", "Cap. Sonhar", "Automotivacao", "Independencia"],
 				datasets : datasetValue
 			};
 
