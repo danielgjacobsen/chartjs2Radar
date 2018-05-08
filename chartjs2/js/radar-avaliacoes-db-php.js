@@ -9,7 +9,7 @@ $(document).ready(function() {
 		success : function(data){
 			console.log(data);
 			
-			var colors = ['green', 'yellow', 'orange', 'blue', 'red', 'brown', 'DarkOrange', 'Magenta', 'OrangeRed'];
+			var colors = ['green', 'orange', 'blue', 'red', 'brown', 'black', 'Magenta', 'OrangeRed', 'Purple', 'DeepPink', 'Indigo', 'Gold', 'Teal'];
 			var len = data.length;
 			var presets = window.chartColors;
 			var utils = Samples.utils;
