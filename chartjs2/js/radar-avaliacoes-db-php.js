@@ -21,7 +21,7 @@ $(document).ready(function() {
 			for (var i=0; i<len; i++) {
 				datasetValue[i] = {
 					label : data[i].pessoa,
-					backgroundColor: utils.transparentize(colors[i]),
+					backgroundColor: "transparent",
 					borderColor: colors[i],
 					fill: '-1',
 					data : [data[i].Agressividade, data[i].Desenv_Relacionamento, data[i].Facilidade_Mudancas, data[i].Extroversao, data[i].Dominancia, data[i].Desenv_Trab, data[i].Formalidade, data[i].Condescendencia, data[i].Concentracao, data[i].Perfil_Tecnico, data[i].Exatidao, data[i].Detalhismo, data[i].Perfil_Artistico, data[i].Paciencia, data[i].Empatia, data[i].Sociabilidade, data[i].Entusiasmo, data[i].Cap_Sonhar, data[i].Automotivacao, data[i].Independencia],
